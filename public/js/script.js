@@ -15,47 +15,47 @@ let isSearching = false
 const products = [
     {
         title: "Dippolar By The Sea",
-        picture_path: "../../public/images/product/277c28b3e8c017906e28fc43f0b2be27.png",
+        picture_path: "images/product/277c28b3e8c017906e28fc43f0b2be27.png",
         price: 85000
     },
     {
         title: "Dippolar Oversize",
-        picture_path: "../../public/images/product/277c28b3e8c017906e28fc43f0b2be27.png",
+        picture_path: "images/product/277c28b3e8c017906e28fc43f0b2be27.png",
         price: 109000
     },
     {
         title: "Arthur Lyons",
-        picture_path: "../../public/images/product/277c28b3e8c017906e28fc43f0b2be27.png",
+        picture_path: "images/product/277c28b3e8c017906e28fc43f0b2be27.png",
         price: 185000
     },
     {
         title: "Cody Holt",
-        picture_path: "../../public/images/product/277c28b3e8c017906e28fc43f0b2be27.png",
+        picture_path: "images/product/277c28b3e8c017906e28fc43f0b2be27.png",
         price: 606000
     },
     {
         title: "Rosetta Phelps",
-        picture_path: "../../public/images/product/277c28b3e8c017906e28fc43f0b2be27.png",
+        picture_path: "images/product/277c28b3e8c017906e28fc43f0b2be27.png",
         price: 135000
     },
     {
         title: "Elva Brady",
-        picture_path: "../../public/images/product/277c28b3e8c017906e28fc43f0b2be27.png",
+        picture_path: "images/product/277c28b3e8c017906e28fc43f0b2be27.png",
         price: 975000
     },
     {
         title: "Adam Perez",
-        picture_path: "../../public/images/product/277c28b3e8c017906e28fc43f0b2be27.png",
+        picture_path: "images/product/277c28b3e8c017906e28fc43f0b2be27.png",
         price: 296000
     },
     {
         title: "Adelaide Gutierrez",
-        picture_path: "../../public/images/product/277c28b3e8c017906e28fc43f0b2be27.png",
+        picture_path: "images/product/277c28b3e8c017906e28fc43f0b2be27.png",
         price: 907000
     },
     {
         title: "Duane Torres",
-        picture_path: "../../public/images/product/277c28b3e8c017906e28fc43f0b2be27.png",
+        picture_path: "images/product/277c28b3e8c017906e28fc43f0b2be27.png",
         price: 55000
     }
 ]
