@@ -599,8 +599,16 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.__button-category-container {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
 .__button-category {
   cursor: pointer;
+  white-space: nowrap;
   border-radius: 9999px;
   border-width: 1px;
   --tw-border-opacity: 1;
@@ -790,4 +798,21 @@ video {
 
 .__base-font {
   font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.__button-category-container::-webkit-scrollbar {
+  height: 3px;
+}
+
+.__button-category-container::-webkit-scrollbar-track {
+  background-color: #ffedde;
+}
+
+.__button-category-container::-webkit-scrollbar-thumb {
+  background-color: #f2994a;
+  border-radius: 16px;
+}
+
+.__button-category-container::-webkit-scrollbar-thumb:hover {
+  background-color: #f2983f;
 }
