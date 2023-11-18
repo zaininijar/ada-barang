@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gray-3: #828282;
+}
+
+@layer components {
+  .__wrapper {
+    @apply sm:max-w-sm w-full sm:mx-auto bg-[#F8FAFB] __base-font text-[#151515];
+  }
+
+  .__header {
+    @apply p-4 h-[270px];
+  }
+
+  .__searchbar {
+    @apply bg-white flex items-center px-4 py-[14px] gap-[14px] rounded-xl w-full text-[12px] leading-[18px];
+  }
+
+  .__input-search {
+    @apply focus:outline-none;
+  }
+
+  .__brand {
+    @apply rounded-xl w-[50px] h-12;
+  }
+
+  .__main-container {
+    @apply p-4 flex flex-col gap-5 bg-white rounded-t-[16px] shadow-xl -mt-[46px] pb-12;
+  }
+
+  .__button-category {
+    @apply px-3 py-2 text-sm text-[#F2994A] border border-[#F2994A] rounded-full cursor-pointer;
+  }
+
+  .__button-category.__active {
+    @apply px-3 py-2 text-sm text-white bg-[#F2994A] rounded-full;
+  }
+
+  .__product-card {
+    @apply rounded-[12px] shadow flex flex-col gap-2 pb-3;
+  }
+
+  .__product-card-content {
+    @apply flex flex-col gap-3 justify-center items-center;
+  }
+}
+
+.__header {
+  background: linear-gradient(
+    180deg,
+    rgba(21, 21, 21, 0.06) 0%,
+    rgba(21, 21, 21, 0) 100%
+  );
+}
+
+.__base-font {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}

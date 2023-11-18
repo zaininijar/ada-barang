@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  },
+  "scripts": {
+    "dev": "yarn tailwindcss -i ./src/css/tailwindcss-input.css -o ./dist/tailwindcss-output.css --watch"
+  },
+  "name": "ada-barang",
+  "version": "1.0.0",
+  "description": "ada barang app, user frontend",
+  "main": "index.js",
+  "author": "zaininijar",
+  "license": "MIT"
+}
