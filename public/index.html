@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ada Barang</title>
-    <link href="css/tailwindcss-output.css" rel="stylesheet" />
+    <link href="../../public/css/tailwindcss-output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +15,7 @@
   <body>
     <div class="__wrapper">
       <header class="__header __gradient">
-        <div class="flex justify-between gap-2">
+        <div class="__nav-search">
           <div class="__searchbar">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -75,10 +75,11 @@
             </svg>
           </div>
         </div>
+        <div id="product-search-container"></div>
         <div id="profile-store" class="flex gap-3 mt-6">
           <img
             class="w-12 h-12 rounded-full"
-            src="images/b4c4ead21bc661661a0aea3a3204fb96.png"
+            src="../../public/images/b4c4ead21bc661661a0aea3a3204fb96.png"
             alt=""
           />
           <div class="flex flex-col gap-2">
@@ -223,6 +224,7 @@
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
+            id="filter-button"
             class="cursor-pointer"
             viewBox="0 0 24 24"
             fill="none"
@@ -273,12 +275,12 @@
           <div class="__button-category">Polo Shirt</div>
           <div class="__button-category">Polo Shirt</div>
         </div>
-        <div class="grid grid-cols-2 grid-flow-row gap-1">
+        <div class="__product-card-wrapper">
           <div class="__product-card">
             <div class="w-full">
               <img
                 class="object-cover object-center"
-                src="images/product/277c28b3e8c017906e28fc43f0b2be27.png"
+                src="../../public/images/product/277c28b3e8c017906e28fc43f0b2be27.png"
                 alt=""
               />
             </div>
@@ -291,45 +293,129 @@
             <div class="w-full">
               <img
                 class="object-cover object-center"
-                src="images/product/277c28b3e8c017906e28fc43f0b2be27.png"
+                src="../../public/images/product/277c28b3e8c017906e28fc43f0b2be27.png"
                 alt=""
               />
             </div>
             <div class="__product-card-content">
-              <h3 class="text-[12px] font-medium">Dippolar By The Sea</h3>
-              <h2 class="text-[14px] font-bold text-[#F2994A]">Rp 85.000</h2>
+              <h3 class="text-[12px] font-medium">Dippolar Oversize</h3>
+              <h2 class="text-[14px] font-bold text-[#F2994A]">Rp 109.000</h2>
             </div>
           </div>
           <div class="__product-card">
             <div class="w-full">
               <img
                 class="object-cover object-center"
-                src="images/product/277c28b3e8c017906e28fc43f0b2be27.png"
+                src="../../public/images/product/277c28b3e8c017906e28fc43f0b2be27.png"
                 alt=""
               />
             </div>
             <div class="__product-card-content">
-              <h3 class="text-[12px] font-medium">Dippolar By The Sea</h3>
-              <h2 class="text-[14px] font-bold text-[#F2994A]">Rp 85.000</h2>
+              <h3 class="text-[12px] font-medium">Jordan Meyer</h3>
+              <h2 class="text-[14px] font-bold text-[#F2994A]">Rp 39.000</h2>
             </div>
           </div>
           <div class="__product-card">
             <div class="w-full">
               <img
                 class="object-cover object-center"
-                src="images/product/277c28b3e8c017906e28fc43f0b2be27.png"
+                src="../../public/images/product/277c28b3e8c017906e28fc43f0b2be27.png"
                 alt=""
               />
             </div>
             <div class="__product-card-content">
-              <h3 class="text-[12px] font-medium">Dippolar By The Sea</h3>
-              <h2 class="text-[14px] font-bold text-[#F2994A]">Rp 85.000</h2>
+              <h3 class="text-[12px] font-medium">Marcus Dennis</h3>
+              <h2 class="text-[14px] font-bold text-[#F2994A]">Rp 28.000</h2>
+            </div>
+          </div>
+          <div class="__product-card">
+            <div class="w-full">
+              <img
+                class="object-cover object-center"
+                src="../../public/images/product/277c28b3e8c017906e28fc43f0b2be27.png"
+                alt=""
+              />
+            </div>
+            <div class="__product-card-content">
+              <h3 class="text-[12px] font-medium">Kyle Cook</h3>
+              <h2 class="text-[14px] font-bold text-[#F2994A]">Rp 82.000</h2>
+            </div>
+          </div>
+          <div class="__product-card">
+            <div class="w-full">
+              <img
+                class="object-cover object-center"
+                src="../../public/images/product/277c28b3e8c017906e28fc43f0b2be27.png"
+                alt=""
+              />
+            </div>
+            <div class="__product-card-content">
+              <h3 class="text-[12px] font-medium">Maude Romero</h3>
+              <h2 class="text-[14px] font-bold text-[#F2994A]">Rp 79.000</h2>
+            </div>
+          </div>
+          <div class="__product-card">
+            <div class="w-full">
+              <img
+                class="object-cover object-center"
+                src="../../public/images/product/277c28b3e8c017906e28fc43f0b2be27.png"
+                alt=""
+              />
+            </div>
+            <div class="__product-card-content">
+              <h3 class="text-[12px] font-medium">Florence Sanchez</h3>
+              <h2 class="text-[14px] font-bold text-[#F2994A]">Rp 17.000</h2>
+            </div>
+          </div>
+          <div class="__product-card">
+            <div class="w-full">
+              <img
+                class="object-cover object-center"
+                src="../../public/images/product/277c28b3e8c017906e28fc43f0b2be27.png"
+                alt=""
+              />
+            </div>
+            <div class="__product-card-content">
+              <h3 class="text-[12px] font-medium">Garrett Hudson</h3>
+              <h2 class="text-[14px] font-bold text-[#F2994A]">Rp 87.000</h2>
             </div>
           </div>
         </div>
       </main>
+      <div class="__overlay-filter">
+        <div class="__filter-container">
+          <h2 class="text-lg font-bold">Filter</h2>
+          <div class="flex flex-col gap-5 mt-6">
+            <div>
+              <h3 class="text-sm font-bold">Urutkan Produk</h3>
+              <div class="flex gap-3 mt-3">
+                <div class="__button-filter __active">Dari huruf A - Z</div>
+                <div class="__button-filter">Dari huruf Z - A</div>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-sm font-bold">Harga</h3>
+              <div class="flex gap-3 mt-3">
+                <div class="__button-filter">Tertinggi</div>
+                <div class="__button-filter">Terendah</div>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-sm font-bold">Status Produk</h3>
+              <div class="flex gap-3 mt-3">
+                <div class="__button-filter">Terbaru</div>
+                <div class="__button-filter">Terlama</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mt-8 text-sm font-bold p-4 w-full text-center text-white bg-[#151515] rounded-lg"
+          >
+            Terapkan
+          </div>
+        </div>
+      </div>
     </div>
-
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

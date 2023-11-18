@@ -4,17 +4,22 @@
 
 :root {
   --gray-3: #828282;
-  --color-primary: #f2994a;
-  --color-primary-hover: #f2994a;
+  --gray-2: #acacac;
+  --color-primary-3: #f2994a;
+  --color-primary-2: #f2994a;
 }
 
 @layer components {
   .__wrapper {
-    @apply sm:max-w-sm w-full sm:mx-auto bg-[#F8FAFB] __base-font text-[#151515];
+    @apply sm:max-w-sm  h-screen sm:mx-auto sm:overflow-scroll bg-[#F8FAFB] __base-font text-[#151515];
   }
 
   .__header {
     @apply p-4 h-[270px] bg-white;
+  }
+
+  .__nav-search {
+    @apply flex w-full justify-between gap-2;
   }
 
   .__searchbar {
@@ -22,7 +27,7 @@
   }
 
   .__searchbar.__active {
-    @apply bg-white flex items-center px-4 py-[14px] gap-[14px] rounded-none w-full text-[12px] leading-[18px] border-b border-[var(--color-primary)];
+    @apply bg-white flex items-center px-4 py-[14px] gap-[14px] rounded-none w-full text-[12px] leading-[18px] border-b border-[var(--color-primary-3)];
   }
 
   .__input-search {
@@ -42,11 +47,15 @@
   }
 
   .__button-category {
-    @apply px-3 py-2 text-sm text-[var(--color-primary)] border border-[var(--color-primary)] rounded-full cursor-pointer whitespace-nowrap;
+    @apply px-3 py-2 text-sm text-[var(--color-primary-3)] border border-[var(--color-primary-3)] rounded-full cursor-pointer whitespace-nowrap hover:bg-[#FBE8D8];
   }
 
   .__button-category.__active {
-    @apply px-3 py-2 text-sm text-white bg-[var(--color-primary)] rounded-full;
+    @apply px-3 py-2 text-sm text-white bg-[var(--color-primary-3)] rounded-full;
+  }
+
+  .__product-card-wrapper {
+    @apply grid grid-cols-2 grid-flow-row gap-1;
   }
 
   .__product-card {
@@ -55,6 +64,34 @@
 
   .__product-card-content {
     @apply flex flex-col gap-3 justify-center items-center;
+  }
+
+  .__img-card {
+    @apply object-cover object-center;
+  }
+
+  .__product-title-card {
+    @apply text-[12px] font-medium;
+  }
+
+  .__product-price-card {
+    @apply text-[14px] font-bold text-[#F2994A];
+  }
+
+  .__overlay-filter {
+    @apply hidden w-full h-full fixed inset-0 bg-[#151515CC] items-end p-[10px];
+  }
+
+  .__filter-container {
+    @apply bg-white rounded-2xl w-full p-4;
+  }
+
+  .__button-filter {
+    @apply text-xs font-bold px-3 py-[10px] w-full text-center text-[#F2994A] bg-white border border-[#F2994A] rounded-lg hover:bg-[#FBE8D8];
+  }
+
+  .__button-filter.__active {
+    @apply bg-[#FBE8D8];
   }
 }
 
@@ -79,10 +116,28 @@
 }
 
 .__button-category-container::-webkit-scrollbar-thumb {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-3);
   border-radius: 16px;
 }
 
 .__button-category-container::-webkit-scrollbar-thumb:hover {
-  background-color: var(--color-primary-hover);
+  background-color: var(--color-primary-2);
+}
+
+.__wrapper::-webkit-scrollbar {
+  height: 3px;
+  width: 3px;
+}
+
+.__wrapper::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+.__wrapper::-webkit-scrollbar-thumb {
+  background-color: var(--gray-2);
+  border-radius: 16px;
+}
+
+.__wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: var(--gray-3);
 }
