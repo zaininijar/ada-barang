@@ -12,11 +12,15 @@
   }
 
   .__header {
-    @apply p-4 h-[270px];
+    @apply p-4 h-[270px] bg-white;
   }
 
   .__searchbar {
     @apply bg-white flex items-center px-4 py-[14px] gap-[14px] rounded-xl w-full text-[12px] leading-[18px];
+  }
+
+  .__searchbar.__active {
+    @apply bg-white flex items-center px-4 py-[14px] gap-[14px] rounded-none w-full text-[12px] leading-[18px] border-b border-[#F2994A];
   }
 
   .__input-search {
@@ -52,7 +56,7 @@
   }
 }
 
-.__header {
+.__header.__gradient {
   background: linear-gradient(
     180deg,
     rgba(21, 21, 21, 0.06) 0%,
