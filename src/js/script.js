@@ -8,11 +8,13 @@ const header = document.querySelector('.__header')
 let isSearching = false
 
 window.addEventListener('click', (e) => {
-    searchMode(isSearching);
     if (e.target.classList == '__input-search') {
-        const isFocused = e.target === document.activeElement
-        searchMode(isFocused)
+        isSearching = e.target === document.activeElement
+    }else {
+        inputSearch.value === '' ? isSearching = false : isSearching = true
     }
+
+    searchMode(isSearching)
 })
 
 const searchMode = (isOpen) => {

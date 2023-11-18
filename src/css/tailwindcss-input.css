@@ -4,6 +4,8 @@
 
 :root {
   --gray-3: #828282;
+  --color-primary: #f2994a;
+  --color-primary-hover: #f2994a;
 }
 
 @layer components {
@@ -20,7 +22,7 @@
   }
 
   .__searchbar.__active {
-    @apply bg-white flex items-center px-4 py-[14px] gap-[14px] rounded-none w-full text-[12px] leading-[18px] border-b border-[#F2994A];
+    @apply bg-white flex items-center px-4 py-[14px] gap-[14px] rounded-none w-full text-[12px] leading-[18px] border-b border-[var(--color-primary)];
   }
 
   .__input-search {
@@ -40,11 +42,11 @@
   }
 
   .__button-category {
-    @apply px-3 py-2 text-sm text-[#F2994A] border border-[#F2994A] rounded-full cursor-pointer whitespace-nowrap;
+    @apply px-3 py-2 text-sm text-[var(--color-primary)] border border-[var(--color-primary)] rounded-full cursor-pointer whitespace-nowrap;
   }
 
   .__button-category.__active {
-    @apply px-3 py-2 text-sm text-white bg-[#F2994A] rounded-full;
+    @apply px-3 py-2 text-sm text-white bg-[var(--color-primary)] rounded-full;
   }
 
   .__product-card {
@@ -77,10 +79,10 @@
 }
 
 .__button-category-container::-webkit-scrollbar-thumb {
-  background-color: #f2994a;
+  background-color: var(--color-primary);
   border-radius: 16px;
 }
 
 .__button-category-container::-webkit-scrollbar-thumb:hover {
-  background-color: #f2983f;
+  background-color: var(--color-primary-hover);
 }
