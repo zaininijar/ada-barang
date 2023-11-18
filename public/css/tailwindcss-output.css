@@ -713,12 +713,20 @@ video {
 .__overlay-filter {
   position: fixed;
   inset: 0px;
+  margin-left: auto;
+  margin-right: auto;
   display: none;
   height: 100%;
   width: 100%;
   align-items: flex-end;
   background-color: #151515CC;
   padding: 10px;
+}
+
+@media (min-width: 640px) {
+  .__overlay-filter {
+    max-width: 24rem;
+  }
 }
 
 .__filter-container {

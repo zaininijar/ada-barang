@@ -12,7 +12,7 @@
 
 @layer components {
   .__wrapper {
-    @apply sm:max-w-sm  h-screen sm:mx-auto sm:overflow-scroll bg-[#F8FAFB] __base-font text-[var(--dark-base)];
+    @apply sm:max-w-sm h-screen sm:mx-auto sm:overflow-scroll bg-[#F8FAFB] __base-font text-[var(--dark-base)];
   }
 
   .__header {
@@ -80,7 +80,7 @@
   }
 
   .__overlay-filter {
-    @apply hidden w-full h-full fixed inset-0 bg-[#151515CC] items-end p-[10px];
+    @apply sm:max-w-sm mx-auto hidden w-full h-full fixed inset-0 bg-[#151515CC] items-end p-[10px];
   }
 
   .__filter-container {
