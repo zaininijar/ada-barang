@@ -1,3 +1,4 @@
+const wrapper = document.querySelector('.__wrapper')
 const mainContainer = document.querySelector('.__main-container')
 const inputSearch = document.querySelector('.__input-search')
 const searchbar = document.querySelector('.__searchbar')
@@ -139,6 +140,8 @@ const createCard = (title, picture_path, price) => {
 const searchMode = (isOpen) => {
 
     if (isOpen) {
+        wrapper.classList.add('bg-white')
+        wrapper.classList.remove('bg-[#F8FAFB]')
         mainContainer.classList.add('hidden')
         profileStore.classList.add('hidden')
         brand.classList.add('hidden')
@@ -148,6 +151,9 @@ const searchMode = (isOpen) => {
         productSearchContainer.classList.remove('hidden')
         productSearchContainer.classList.add('block')
     }else {
+        wrapper.classList.remove('bg-white')
+        wrapper.classList.add('bg-[#F8FAFB]')
+
         mainContainer.classList.remove('hidden')
         profileStore.classList.remove('hidden')
         brand.classList.remove('hidden')

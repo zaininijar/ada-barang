@@ -5,13 +5,14 @@
 :root {
   --gray-3: #828282;
   --gray-2: #acacac;
+  --dark-base: #151515;
   --color-primary-3: #f2994a;
   --color-primary-2: #f2994a;
 }
 
 @layer components {
   .__wrapper {
-    @apply sm:max-w-sm  h-screen sm:mx-auto sm:overflow-scroll bg-[#F8FAFB] __base-font text-[#151515];
+    @apply sm:max-w-sm  h-screen sm:mx-auto sm:overflow-scroll bg-[#F8FAFB] __base-font text-[var(--dark-base)];
   }
 
   .__header {
@@ -75,7 +76,7 @@
   }
 
   .__product-price-card {
-    @apply text-[14px] font-bold text-[#F2994A];
+    @apply text-[14px] font-bold text-[var(--color-primary-3)];
   }
 
   .__overlay-filter {
@@ -87,7 +88,7 @@
   }
 
   .__button-filter {
-    @apply text-xs font-bold px-3 py-[10px] w-full text-center text-[#F2994A] bg-white border border-[#F2994A] rounded-lg hover:bg-[#FBE8D8];
+    @apply text-xs font-bold px-3 py-[10px] w-full text-center text-[var(--color-primary-3)] bg-white border border-[var(--color-primary-3)] rounded-lg hover:bg-[#FBE8D8];
   }
 
   .__button-filter.__active {

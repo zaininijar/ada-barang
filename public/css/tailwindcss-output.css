@@ -538,8 +538,7 @@ video {
   height: 100vh;
   --tw-bg-opacity: 1;
   background-color: rgb(248 250 251 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(21 21 21 / var(--tw-text-opacity));
+  color: var(--dark-base);
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -708,8 +707,7 @@ video {
 .__product-price-card {
   font-size: 14px;
   font-weight: 700;
-  --tw-text-opacity: 1;
-  color: rgb(242 153 74 / var(--tw-text-opacity));
+  color: var(--color-primary-3);
 }
 
 .__overlay-filter {
@@ -735,8 +733,7 @@ video {
   width: 100%;
   border-radius: 0.5rem;
   border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(242 153 74 / var(--tw-border-opacity));
+  border-color: var(--color-primary-3);
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding-left: 0.75rem;
@@ -747,8 +744,7 @@ video {
   font-size: 0.75rem;
   line-height: 1rem;
   font-weight: 700;
-  --tw-text-opacity: 1;
-  color: rgb(242 153 74 / var(--tw-text-opacity));
+  color: var(--color-primary-3);
 }
 
 .__button-filter:hover {
@@ -854,6 +850,16 @@ video {
   background-color: rgb(21 21 21 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#F8FAFB\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 251 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -928,6 +934,7 @@ video {
 :root {
   --gray-3: #828282;
   --gray-2: #acacac;
+  --dark-base: #151515;
   --color-primary-3: #f2994a;
   --color-primary-2: #f2994a;
 }
