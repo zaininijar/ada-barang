@@ -6,6 +6,7 @@ const brand = document.querySelector('.__brand')
 const profileStore = document.querySelector('#profile-store')
 const header = document.querySelector('.__header')
 const productSearchContainer = document.querySelector('#product-search-container')
+const productWrapper = document.querySelector('#product-wrapper')
 
 const overlayFilter = document.querySelector('.__overlay-filter')
 
@@ -16,47 +17,47 @@ let isSearching = false
 const products = [
     {
         title: "Dippolar By The Sea",
-        picture_path: "images/product/277c28b3e8c017906e28fc43f0b2be27.png",
+        picture_path: "https://source.unsplash.com/random/Minerva Ray",
         price: 85000
     },
     {
         title: "Dippolar Oversize",
-        picture_path: "images/product/277c28b3e8c017906e28fc43f0b2be27.png",
+        picture_path: "https://source.unsplash.com/random/Elijah Murray",
         price: 109000
     },
     {
         title: "Arthur Lyons",
-        picture_path: "images/product/277c28b3e8c017906e28fc43f0b2be27.png",
+        picture_path: "https://source.unsplash.com/random/Nancy Russell",
         price: 185000
     },
     {
         title: "Cody Holt",
-        picture_path: "images/product/277c28b3e8c017906e28fc43f0b2be27.png",
+        picture_path: "https://source.unsplash.com/random/Katharine Mann",
         price: 606000
     },
     {
         title: "Rosetta Phelps",
-        picture_path: "images/product/277c28b3e8c017906e28fc43f0b2be27.png",
+        picture_path: "https://source.unsplash.com/random/Alex Duncan",
         price: 135000
     },
     {
         title: "Elva Brady",
-        picture_path: "images/product/277c28b3e8c017906e28fc43f0b2be27.png",
+        picture_path: "https://source.unsplash.com/random/Tony Hubbard",
         price: 975000
     },
     {
         title: "Adam Perez",
-        picture_path: "images/product/277c28b3e8c017906e28fc43f0b2be27.png",
+        picture_path: "https://source.unsplash.com/random/Cornelia Harvey",
         price: 296000
     },
     {
         title: "Adelaide Gutierrez",
-        picture_path: "images/product/277c28b3e8c017906e28fc43f0b2be27.png",
+        picture_path: "https://source.unsplash.com/random/Catherine Daniel",
         price: 907000
     },
     {
         title: "Duane Torres",
-        picture_path: "images/product/277c28b3e8c017906e28fc43f0b2be27.png",
+        picture_path: "https://source.unsplash.com/random/Rosalie Hernandez",
         price: 55000
     }
 ]
@@ -76,6 +77,14 @@ window.addEventListener('click', (e) => {
 const cardWrapper = document.createElement('div')
 cardWrapper.classList.add('__product-card-wrapper')
 cardWrapper.classList.add('mt-8')
+
+
+const initProducts = () => {
+    products.map((product) => {
+        cardWrapper.appendChild(createCard(product.title, product.picture_path, product.price))
+    })
+    productWrapper.appendChild(cardWrapper)
+}
 
 inputSearch.addEventListener('keyup', (e) => {
     
@@ -108,11 +117,11 @@ const createCard = (title, picture_path, price) => {
     card.classList.add('__product-card')
 
     const imageCard = document.createElement('div')
-    imageCard.classList.add('w-full')
+    imageCard.classList.add('__product-card-image-container')
 
     const img = document.createElement('img')
     img.src = picture_path
-    img.classList.add('__img-card')
+    img.classList.add('__product-card-image')
     img.alt = ''
 
     imageCard.appendChild(img)
